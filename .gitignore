@@ -1,0 +1,48 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Project Specific
+# Since this script generates S4P files, we might want to exclude them if they are large
+# However, usually we keep small example files.
+# Let's exclude generated output files starting with timestamp (YYYYMMDD) or GMS_extracted
+[0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9]_*.s4p
+GMS_extracted_*.s4p
+
+# VS Code
+.vscode/
+*.code-workspace
+
+# Large Data Files (Optional)
+# *.s4p 
+# (Commented out: keep example .s4p files if necessary, but exclude large measurements)
