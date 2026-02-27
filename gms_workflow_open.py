@@ -34,6 +34,10 @@ import skrf as rf
 # ==========================================
 # 默认配置区域 / Default Configuration
 # ==========================================
+# 获取脚本所在目录，确保默认文件路径正确
+# Get script directory to ensure default file paths are correct
+SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+
 # 如果不使用命令行参数，将使用以下默认值
 # If command line arguments are not provided, these defaults are used.
 
@@ -41,9 +45,9 @@ import skrf as rf
 DEFAULT_ENABLE_DEEMBBEDDING = False
 
 # 默认文件名 / Default Filenames
-DEFAULT_SHORT = 'PCIE_S_para_10inch_S.s4p'
-DEFAULT_LONG = 'PCIE_S_para_30inch_S.s4p'
-DEFAULT_SINGLE = 'PCIE_S_para_10inch_S.s4p'
+DEFAULT_SHORT = os.path.join(SCRIPT_DIR, 'PCIE_S_para_10inch_S.s4p')
+DEFAULT_LONG = os.path.join(SCRIPT_DIR, 'PCIE_S_para_30inch_S.s4p')
+DEFAULT_SINGLE = os.path.join(SCRIPT_DIR, 'PCIE_S_para_10inch_S.s4p')
 # ==========================================
 
 
